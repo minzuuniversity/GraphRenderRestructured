@@ -139,7 +139,7 @@
 
 ---
 
-该项目的实现示例：GraphRender
+该项目的实现示例：GraphRender [总体评分]（https://yinglichina8848.github.io/GraphRenderRestructured/doc/GraphRenderRestructured_Score_Report.html）
 
 #📄 项目文档
 
