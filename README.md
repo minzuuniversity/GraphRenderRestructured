@@ -195,6 +195,8 @@ doc 目录下的3个PDF 文件记录了图形渲染环境的设计过程。
 - 期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），集成了文档自动化工具。
 - 4. 语义化文档集成 1.0.0（2天）
 - 期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），加入了标准的版本号自动变更和 CHANGELOG 自动生成。
+- 5. 补全文档注释、单元测试以及AI对话记录 1.1.2（3天），使用硅基流动的 Deepseek，花费赠送的额度20-30元。
+- 期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），使用 Aider 详见（Aider对话过程.pdf），进行了注释补全，测试代码补全和调试。
 
 - 一个新手在这些文档和教程的帮助下，应该可以在 一个月内，完整复现整个过程。
 
@@ -385,14 +387,16 @@ mvn exec:java -Dexec.mainClass="com.example.renderer.ui.MainUI"
 
 ## 📈 版本发布历史
 
-| 版本号 | 发布说明 |
-|--------|----------|
-| [v1.0.1](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.0.1) | 增加测试用例、补全抽象方法，完善 UML 结构图 |
-| [v1.0.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.0.0) | 完整系统设计与功能实现，发布初版 API 与文档 |
+| 版本记录                                                                                    | 发布说明 |
+|------------------------------------------------------------------------------------------|----------|
+| [v0.1.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v0.1.0) | 增加测试用例、补全抽象方法，完善 UML 结构图 |
+| [v0.3.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v0.3.0) | 完整系统设计与功能实现，发布初版 API 与文档 |
+| [v1.0.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.0.0) | (2025-06-30)（3天），花费约20元， 期间在 Aider + 硅基流动 Deepseek 辅助下， 生成了文档注释，并生成测试用例，并生成测试报告 |
 
 - 简要的版本说明 请见 [Release 页面](https://yinglichina8848.github.io/GraphRenderRestructured/doc/MYCHANGELOG.html)。
 - 完整变更记录和详细版本历史 请见 [CHANGELOG 变更记录](https://yinglichina8848.github.io/GraphRenderRestructured/doc/CHANGELOG.html)。
-
+- 项目的版本页 请见[Release](https://github.com/yinglichina8848/GraphRenderRestructured/releases)。
+- 
 ---
 
 ## 🛠 改进建议（未来工作）
