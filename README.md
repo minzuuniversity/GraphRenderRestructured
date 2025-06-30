@@ -187,12 +187,13 @@ doc 目录下的3个PDF 文件记录了图形渲染环境的设计过程。
 ## 🛠 开发过程
 -整个项目的开发，耗时14天（6月14 22：00 -28日 20：00），这是 2026-06-28 目前的结果。
 
-| 版本记录                |   耗时  |   成本   |  发布说明 |
-| 1. 初始版本 0.1.0       |  3天    |   10 元 | 期间配置 Aider 使用 Deepseek 进行开发，API 方式充值10元，额度已经基本用完。还有个别的单元测试需要改进，部分测试代码的注释尚未完全补全（可以使用 IDEA + 通义灵码逐步补全每个文件，但是过于烦琐，本项目是示例程序，已经足够说明AI编程的能力）。|
-| 2. 文档补全版本 0.2.0    |  2天    |   10 元 | 期间为了配合课堂演示，API 方式又充值10元，额度已经基本用完，主要是利用 Aider + Deepseek 生成各种报告，代码注释等，过程详见：aider对话过程.pdf。|
-| 3. 文档自动化集成 0.3.0  |   3天   |  0 元 |  期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），集成了文档自动化工具。|
-| 4. 第一个基础版本 1.0.0  |   1天   |  0 元 |  使用语义化版本，形成基础版本|
-| 5. 冻结版本 1.1.2  |   3天   |  20 元 |  补全文档注释、单元测试以及AI对话记录 1.1.2（3天），使用硅基流动的 Deepseek，在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），使用 Aider 详见（Aider对话过程.pdf），进行了注释补全，测试代码补全和调试。|
+| 版本记录              | 耗时 | 成本  | 发布说明 |
+|----------------------|------|-------|----------|
+| 1. 初始版本 0.1.0     | 3天  | 10元  | 配置 Aider 使用 Deepseek 开发，API 充值10元额度用完。<br>还有个别单元测试和注释尚未补全（建议用 IDEA + 通义灵码 逐步完成，但项目为示例程序，已能展示 AI 编程能力）。 |
+| 2. 文档补全版本 0.2.0 | 2天  | 10元  | 为课堂演示再次充值 10 元，使用 Aider + Deepseek 生成各类报告和注释。<br>详见《aider对话过程.pdf》。 |
+| 3. 文档自动化集成 0.3.0 | 3天 | 0元   | 在 ChatGPT 辅助下集成文档自动化工具。<br>详见《ChatGPT-GraphRender项目问答全过程.pdf》。 |
+| 4. 基础版本 1.0.0     | 1天  | 0元   | 使用语义化版本控制，形成首个基础稳定版本。 |
+| 5. 冻结版本 1.1.2     | 3天  | 20元  | 使用硅基流动 Deepseek + ChatGPT + Aider（详见对应 PDF），补全文档注释、测试代码和 AI 对话记录。 |
 
 - 一个新手在这些文档和教程的帮助下，应该可以在 一个月内，完整复现整个过程。
 
@@ -387,12 +388,54 @@ mvn exec:java -Dexec.mainClass="com.example.renderer.ui.MainUI"
 
 ## 📈 版本发布历史
 
-| 版本记录                                                                                    | 发布说明 |
-|------------------------------------------------------------------------------------------|----------|
-| [v0.1.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v0.1.0) | 增加测试用例、补全抽象方法，完善 UML 结构图 |
-| [v0.3.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v0.3.0) | 完整系统设计与功能实现，发布初版 API 与文档 |
-| [v1.0.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.0.0) | (2025-06-30)（3天），花费约20元， 期间在 Aider + 硅基流动 Deepseek 辅助下， 生成了文档注释，并生成测试用例，并生成测试报告 |
+📜# 更新日志（Changelog）
 
+本项目遵循 Conventional Commits 和 semantic-release 标准，自动生成版本变更记录。
+
+---
+
+## [1.2.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.2.0) - 2025-06-30
+
+- ✨ 冻结最终版本，完善 AI 对话记录，更新 README
+- 📘 发布详细的软件质量分析与版本说明
+
+---
+
+## [1.1.2](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.1.2) - 2025-06-30
+
+- 🧪 支持图形界面测试的云端环境验证
+- 🔁 自动 CHANGELOG 生成，无需手动复制
+- 🧩 修复发布脚本并完善自动部署流程（同步 Gitee）
+
+---
+
+## [1.1.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.1.0) - 2025-06-30
+
+- 🧪 增强 SwingUI 和工厂类测试，覆盖率达 86%
+- 🧹 多项 bug 修复：文件选择逻辑、异常测试、UI 测试稳定性
+- ♻️ 重构渲染逻辑，提升稳定性和测试友好性
+
+---
+
+## [1.0.x](https://github.com/yinglichina8848/GraphRenderRestructured/releases?after=v1.1.0) - 2025-06-29 ~ 06-30
+
+- 🧪 补全命令、观察者、工厂、访问者等核心模块的单元测试
+- 📚 统一注释风格，添加作者与时间，生成 HTML 与 PDF 文档
+- 🔧 修复 Javadoc、Swing 渲染器、SVG 输出、图形测试等关键错误
+
+---
+
+## [1.0.0](https://github.com/yinglichina8848/GraphRenderRestructured/releases/tag/v1.0.0) - 2025-06-27
+
+- 🔨 初始化语义版本控制，集成 Doxygen + PDF 输出 + GitHub Pages
+- ✅ 支持大部分图形接口实现与命令系统的重构
+- 📘 添加 AI 生成的文档质量评估报告和渲染分析文档
+- ⚠️ **BREAKING CHANGE:** 项目文档结构调整、完整渲染系统重构
+
+---
+
+📚 详细版本记录请见：[Release 页面](https://github.com/yinglichina8848/GraphRenderRestructured/releases)
+- 
 - 简要的版本说明 请见 [Release 页面](https://yinglichina8848.github.io/GraphRenderRestructured/doc/MYCHANGELOG.html)。
 - 完整变更记录和详细版本历史 请见 [CHANGELOG 变更记录](https://yinglichina8848.github.io/GraphRenderRestructured/doc/CHANGELOG.html)。
 - 项目的版本页 请见[Release](https://github.com/yinglichina8848/GraphRenderRestructured/releases)。
