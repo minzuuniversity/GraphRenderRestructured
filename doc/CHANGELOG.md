@@ -1,3 +1,8 @@
+## <small>1.2.2 (2025-06-30)</small>
+
+* Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([c2c8a61](https://github.com/yinglichina8848/GraphRenderRestructured/commit/c2c8a61))
+* docs: 加入项目的评分结果 ([b853ad3](https://github.com/yinglichina8848/GraphRenderRestructured/commit/b853ad3))
+
 ## <small>1.2.1 (2025-06-30)</small>
 
 * docs: 加入项目总体评分的链接 ([931e594](https://github.com/yinglichina8848/GraphRenderRestructured/commit/931e594))
