@@ -1,3 +1,13 @@
+## <small>1.1.2 (2025-06-30)</small>
+
+* docs: 改进了云端测试环境的瑕疵，Action 环境应该也能做图形界面的测试，另外改进了 CHANGELOG 的自动生成，不用手工复制， ([c448868](https://github.com/yinglichina8848/GraphRenderRestructured/commit/c448868))
+* Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([12f4ab2](https://github.com/yinglichina8848/GraphRenderRestructured/commit/12f4ab2))
+* 抽取更新的版本号和CHANGELOG， 推送到 Github main 分支，触发云端环境自动编译测试, 自动生成发布静态文档到 gh-pages，并自动同步项目到 Gitee ([fa7bd6a](https://github.com/yinglichina8848/GraphRenderRestructured/commit/fa7bd6a))
+* 抽取更新的版本号和CHANGELOG， 推送到 Github main 分支，触发云端环境自动编译测试, 自动生成发布静态文档到 gh-pages，并自动同步项目到 Gitee ([0b1f6cd](https://github.com/yinglichina8848/GraphRenderRestructured/commit/0b1f6cd))
+* 抽取更新的版本号和CHANGELOG， 推送到 Github main 分支，触发云端环境自动编译测试, 自动生成发布静态文档到 gh-pages，并自动同步项目到 Gitee ([be9e362](https://github.com/yinglichina8848/GraphRenderRestructured/commit/be9e362))
+* 更新 push.sh ([6c38163](https://github.com/yinglichina8848/GraphRenderRestructured/commit/6c38163))
+* 自动更新了 CHANGELOG ([193c711](https://github.com/yinglichina8848/GraphRenderRestructured/commit/193c711))
+
 ## <small>1.1.1 (2025-06-30)</small>
 
 * Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([58c932f](https://github.com/yinglichina8848/GraphRenderRestructured/commit/58c932f))
