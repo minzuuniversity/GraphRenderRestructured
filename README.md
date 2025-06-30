@@ -185,7 +185,8 @@ doc 目录下的3个PDF 文件记录了图形渲染环境的设计过程。
 ---
 
 ## 🛠 开发过程
--📈整个项目的开发，耗时14天（6月14 22：00 -28日 20：00），这是 2026-06-28 目前的结果。
+-整个项目的开发，耗时14天（6月14 22：00 -28日 20：00），这是 2026-06-28 目前的结果。
+
 | 版本记录                |   耗时  |   成本   |  发布说明 |
 | 1. 初始版本 0.1.0       |  3天    |   10 元 | 期间配置 Aider 使用 Deepseek 进行开发，API 方式充值10元，额度已经基本用完。还有个别的单元测试需要改进，部分测试代码的注释尚未完全补全（可以使用 IDEA + 通义灵码逐步补全每个文件，但是过于烦琐，本项目是示例程序，已经足够说明AI编程的能力）。|
 | 2. 文档补全版本 0.2.0    |  2天    |   10 元 | 期间为了配合课堂演示，API 方式又充值10元，额度已经基本用完，主要是利用 Aider + Deepseek 生成各种报告，代码注释等，过程详见：aider对话过程.pdf。|
@@ -195,7 +196,7 @@ doc 目录下的3个PDF 文件记录了图形渲染环境的设计过程。
 
 - 一个新手在这些文档和教程的帮助下，应该可以在 一个月内，完整复现整个过程。
 
-##  版本发布历史
+## 📈 版本历史
 - 简要的版本说明 请见 [Release 页面](https://yinglichina8848.github.io/GraphRenderRestructured/doc/MYCHANGELOG.html)。
 - 完整变更记录和详细版本历史 请见 [CHANGELOG 变更记录](https://yinglichina8848.github.io/GraphRenderRestructured/doc/CHANGELOG.html)。
 - 项目的版本页 请见[Release](https://github.com/yinglichina8848/GraphRenderRestructured/releases)。
