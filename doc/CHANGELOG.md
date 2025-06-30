@@ -1,3 +1,8 @@
+## 1.2.0 (2025-06-30)
+
+* Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([cb74fa5](https://github.com/yinglichina8848/GraphRenderRestructured/commit/cb74fa5))
+* feat: 更新了AI对话记录，改进了README，最终冻结的版本 ([ee6b9bb](https://github.com/yinglichina8848/GraphRenderRestructured/commit/ee6b9bb))
+
 ## <small>1.1.2 (2025-06-30)</small>
 
 * docs: 改进了云端测试环境的瑕疵，Action 环境应该也能做图形界面的测试，另外改进了 CHANGELOG 的自动生成，不用手工复制， ([c448868](https://github.com/yinglichina8848/GraphRenderRestructured/commit/c448868))
