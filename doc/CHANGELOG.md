@@ -1,3 +1,12 @@
+## <small>1.2.1 (2025-06-30)</small>
+
+* docs: 加入项目总体评分的链接 ([931e594](https://github.com/yinglichina8848/GraphRenderRestructured/commit/931e594))
+* Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([7357f6b](https://github.com/yinglichina8848/GraphRenderRestructured/commit/7357f6b))
+* 更新了改进了README，加入了 ChatGPT 生成的项目总体评分 ([23f45dc](https://github.com/yinglichina8848/GraphRenderRestructured/commit/23f45dc))
+* 更新了改进了README，美化项目介绍和版本说明 ([bd24671](https://github.com/yinglichina8848/GraphRenderRestructured/commit/bd24671))
+* 更新了改进了README，美化项目介绍和版本说明 ([bd53c57](https://github.com/yinglichina8848/GraphRenderRestructured/commit/bd53c57))
+* 更新了改进了README，美化项目介绍和版本说明 ([6ee2740](https://github.com/yinglichina8848/GraphRenderRestructured/commit/6ee2740))
+
 ## 1.2.0 (2025-06-30)
 
 * Merge branch 'main' of github.com:yinglichina8848/GraphRenderRestructured ([cb74fa5](https://github.com/yinglichina8848/GraphRenderRestructured/commit/cb74fa5))
