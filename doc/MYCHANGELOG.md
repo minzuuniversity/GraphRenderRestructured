@@ -6,28 +6,30 @@
 
 ------------------------------------------------------------------------------------------------
 
-## 完整的项目文档：https://yinglichina8848.github.io/GraphRenderRestructured
+## [完整的项目文档](https://yinglichina8848.github.io/GraphRenderRestructured)
 
-## 软件质量报告：https://yinglichina8848.github.io/GraphRenderRestructured/doc/quality-summary.html
+## [软件质量报告](https://yinglichina8848.github.io/GraphRenderRestructured/doc/quality-summary.html)
 
-## 自动生成的软件变更报告：https://yinglichina8848.github.io/GraphRenderRestructured/doc/CHANGELOG.html
+## [自动生成的软件变更报告](https://yinglichina8848.github.io/GraphRenderRestructured/doc/CHANGELOG.html)
 
-## 软件版本说明：https://yinglichina8848.github.io/GraphRenderRestructured/doc/MYCHANGELOG.html
+## [软件版本说明](https://yinglichina8848.github.io/GraphRenderRestructured/doc/MYCHANGELOG.html)
 
 
 ---
 
 ## 🛠 开发过程
 整个项目的开发，耗时14天（6月14 22：00 -28日 20：00），这是 2026-06-28 目前的结果。
-🎉 1. 初始版本 0.1.0（3天）
+-  1. 初始版本 0.1.0（3天）
 期间配置 Aider 使用 Deepseek 进行开发，API 方式充值10元，额度已经基本用完。
 还有个别的单元测试需要改进，部分测试代码的注释尚未完全补全（可以使用 IDEA + 通义灵码逐步补全每个文件，但是过于烦琐，本项目是示例程序，已经足够说明AI编程的能力）。
-🎉 2. 文档补全版本 0.2.0（2天）
+-  2. 文档补全版本 0.2.0（2天）
 期间为了配合课堂演示，API 方式又充值10元，额度已经基本用完，主要是利用 Aider + Deepseek 生成各种报告，代码注释等，过程详见：aider对话过程.pdf。
-🎉 3. 文档自动化集成 0.3.0（3天）
+-  3. 文档自动化集成 0.3.0（3天）
 期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），集成了文档自动化工具。
-🎉 4. 语义化文档集成 1.0.0（2天）
+-  4. 语义化文档集成 1.0.0（2天）
 期间在 ChatGPT 辅助下（详见ChatGPT-GraphRender项目问答全过程.pdf），加入了标准的版本号自动变更和 CHANGELOG 自动生成。
+-  5. 补全注释和测试) 1.1.0 (2025-06-30)（3天），花费约20元，
+期间在 Aider + 硅基流动 Deepseek 辅助下， 生成了文档注释，并生成测试用例，并生成测试报告。
 
 一个新手在这些文档和教程的帮助下，应该可以在 一个月内，完整复现整个过程。
 ---
@@ -37,6 +39,9 @@
 
 ###考虑加入 AI 自动分析，提升软件质量，引入MCP工作流，完成烦琐的提示、测试、补全注释等非创造性的工作。
 
+## [v1.1.0] 2025-06-30
+### ✨ 期间在 Aider + 硅基流动 Deepseek 辅助下， 生成了文档注释，并生成测试用例，并生成测试报告。
+- ✅ 主要补充的界面类的单元测试，形成了在云端环境，没有显示的情况下的自动测试。
 
 ## [v1.0.0] - 2025-06-28
 ### ✨ 集成了语义版本控制，提交源码时自动升级版本号，并生成变更记录。
@@ -85,7 +90,7 @@
 
 ## [v0.1.0] - 2025-06-24
 
-### 🎉 初始版本
+### -  初始版本
 - Java + JavaScript 渲染核心代码结构搭建。
 - 支持 JavaDoc 与 Doxygen 双文档系统。
 - 上传类图、顺序图，文档结构标准化。

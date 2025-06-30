@@ -13,46 +13,60 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ 拉取仓库完整内容
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 2️⃣ 设置 Java 17 环境
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
+      # 3️⃣ 设置 Python 3.11 环境
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # 4️⃣ 安装 Python 依赖
       - name: Install Python dependencies
         run: |
-          pip install -r scripts/requirements.txt || pip install beautifulsoup4 lxml
+          pip install -r scripts/requirements.txt || pip install beautifulsoup4 lxml jinja2
 
+      # 5️⃣ 安装 Doxygen + Graphviz（用于类图）
       - name: 安装 Doxygen
         run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
 
+      # 6️⃣ 安装并启动 Xvfb，用于 headless UI 测试
       - name: 安装 Xvfb
-        run: sudo apt-get update && sudo apt-get install -y xvfb
+        run: sudo apt-get install -y xvfb
 
-      - name: 启动虚拟显示
+      - name: Run Maven site & tests with virtual display
+        env:
+          DISPLAY: :99
         run: |
-          export DISPLAY=:99
-          Xvfb :99 -screen 0 1024x768x16 &
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1024x768x24 &
+          sleep 3  # 等待 Xvfb 启动完成
+          #mvn clean verify site
+          echo "🛠️ 使用 xvfb-run 构建 Maven site 和报告..."
+          xvfb-run --auto-servernum --server-args="-screen 0 1024x768x16" mvn clean verify site
 
-      - name: Build Maven site and reports
-        run: mvn clean verify site
-
+      # 7️⃣ 生成质量摘要（汇总 Jacoco, PMD 等）
       - name: Generate quality-summary.md
         run: python3 scripts/generate_quality_summary.py
 
+      # 8️⃣ 拷贝输出文件到 doc 目录
       - name: Copy generated files to doc/
         run: |
+          mkdir -p doc/
           cp -r target/site/* doc/
           cp quality-summary.md doc/
 
+      # 9️⃣ 发布 doc/ 到 gh-pages 分支
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

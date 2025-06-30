@@ -1,9 +1,9 @@
 name: 🧠 自动 编译测试 生成静态网页并发布到 gh-pages
 
 on:
-  workflow_dispatch:  # 手动触发
+  workflow_dispatch:
   push:
-    branches: [ main ]  # 推送到 main 分支时触发
+    branches: [ main ]
 
 jobs:
   build-and-ai-fix:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # 获取完整历史以支持分支创建等操作
+          fetch-depth: 0
 
       - name: ⚙️ 设置 JDK 17
         uses: actions/setup-java@v4
@@ -21,35 +21,23 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: 💡 安装 Pandoc Doxygen Graphviz 和 Python3 + pip + jinja2
+      - name: 💡 安装 Pandoc、Doxygen、Graphviz、Python3 + pip + jinja2
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc doxygen graphviz python3 python3-pip
+          sudo apt-get install -y pandoc doxygen graphviz python3 python3-pip xvfb
           python3 -m pip install --upgrade pip
-          pip3 install jinja2
-
-      - name: Install Python dependencies
-        run: pip install beautifulsoup4 lxml
-
-      - name: 安装 Xvfb
-        run: sudo apt-get update && sudo apt-get install -y xvfb
-
-      - name: 启动虚拟显示
-        run: |
-          export DISPLAY=:99
-          Xvfb :99 -screen 0 1024x768x16 &
+          pip3 install jinja2 beautifulsoup4 lxml
 
       - name: 🚀 编译、测试、生成报告并渲染发布
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           chmod +x publish.sh
-          ./publish.sh
+          xvfb-run --auto-servernum --server-args="-screen 0 1024x768x16" ./publish.sh
 
-      - name: 📦 上传 AI 分析报告(如果存在）
+      - name: 📦 上传 AI 分析报告（如果存在）
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ai-fix-report
           path: doc/ai_fix_suggestions.md
-
