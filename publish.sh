@@ -23,10 +23,10 @@ if [ -d "$DOXYGEN_HTML" ]; then
   cp -r "$DOXYGEN_HTML"/* "$SITE_DIR/doxygen/"
 fi
 
-echo "📁 拷贝 CHANGELOG.md（如果存在）到 doc/ 目录..."
-if [ -f CHANGELOG.md ]; then
-  cp CHANGELOG.md doc/
-  echo "✅ 已复制 CHANGELOG.md 到 doc/CHANGELOG.md"
+echo "📁 拷贝 aider 对话记录（如果存在）到 doc/ 目录..."
+if [ -f .aider.chat.history.md ]; then
+  cp .aider.chat.history.md doc/aider.chat.record.md
+  echo "✅ 已复制 .aider.chat.history.md 到 doc/aider.chat.record.md"
 fi
 
 echo "📝 转换 Markdown 为 HTML..."
